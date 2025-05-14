@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Geométrica</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Menu Section -->
+        <section class="menu-section">
+            <header>
+                <h1>Calculadora Geométrica</h1>
+                <p>Explora el mundo de las formas y los sólidos. Calcula perímetros, áreas y volúmenes con facilidad y precisión.</p>
+            </header>
+
+            <h2>Elige una Figura o Cuerpo Geométrico</h2>
+            
+            <div class="grid-container">
+                <!-- Figuras Planas -->
+                <div class="grid-section">
+                    <h3>Figuras Planas</h3>
+                    <div class="grid-items">
+                        <div class="card" data-shape="triangulo">
+                            <div class="shape-icon triangle"></div>
+                            <h4>Triángulo</h4>
+                        </div>
+                        <div class="card" data-shape="cuadrado">
+                            <div class="shape-icon square"></div>
+                            <h4>Cuadrado</h4>
+                        </div>
+                        <div class="card" data-shape="circulo">
+                            <div class="shape-icon circle"></div>
+                            <h4>Círculo</h4>
+                        </div>
+                        <div class="card" data-shape="rombo">
+                            <div class="shape-icon rhombus"></div>
+                            <h4>Rombo</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cuerpos Geométricos -->
+                <div class="grid-section">
+                    <h3>Cuerpos Geométricos</h3>
+                    <div class="grid-items">
+                        <div class="card" data-shape="esfera">
+                            <div class="shape-icon sphere"></div>
+                            <h4>Esfera</h4>
+                        </div>
+                        <div class="card" data-shape="cilindro">
+                            <div class="shape-icon cylinder"></div>
+                            <h4>Cilindro</h4>
+                        </div>
+                        <div class="card" data-shape="cubo">
+                            <div class="shape-icon cube"></div>
+                            <h4>Cubo</h4>
+                        </div>
+                        <div class="card" data-shape="piramide">
+                            <div class="shape-icon pyramid"></div>
+                            <h4>Pirámide</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Calculator Section -->
+        <section class="calculator-section" style="display: none;">
+            <button class="back-button">← Volver al menú</button>
+            <div id="calculator-content" class="calculator-content">
+                <!-- Calculator content will be dynamically inserted here -->
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
